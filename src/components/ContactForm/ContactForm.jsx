@@ -9,11 +9,11 @@ const ContactSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, `The "Name" is too Short!`)
     .max(50, `The "Name" is too Long!`)
-    .required('The "Name" is Required field!'),
+    .required("Required!"),
   number: Yup.string()
     .min(3, `The "Number" is too Short!`)
     .max(50, `The "Number" is too Long!`)
-    .required('The "Number" is Required field!'),
+    .required("Required!"),
 });
 
 const initialValues = {
